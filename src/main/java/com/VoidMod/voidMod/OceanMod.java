@@ -12,7 +12,7 @@ import net.minecraft.init.Blocks;
 
 @Mod(modid = OceanMod.MODID, name = OceanMod.NAME, version = OceanMod.VERSION)
 public class OceanMod {
-	    public static final String MODID = "OceanMod";
+	    public static final String MODID = "oceanmod";
 	    public static final String NAME = "Ocean mod: underwater aesthetics";
 	    public static final String VERSION = "0.0";
 
