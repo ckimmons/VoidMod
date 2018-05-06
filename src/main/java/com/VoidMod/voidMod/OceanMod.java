@@ -15,6 +15,7 @@ public class OceanMod {
 	    public static final String MODID = "oceanmod";
 	    public static final String NAME = "Ocean mod: underwater aesthetics";
 	    public static final String VERSION = "0.0";
+	    
 
 	    private static Logger logger;
 

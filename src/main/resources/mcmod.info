@@ -1,16 +1,12 @@
-[
-{
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
-  "url": "",
-  "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
-  "logoFile": "",
-  "screenshots": [],
-  "dependencies": []
-}
-]
+[{
+  "modid": "oceanmod",
+  "name": "Ocean mod: underwater aesthetics",
+  "description": "Lets you build underwater structures!",
+  "version": "1.0.0.0",
+  "mcversion": "1.10.2",
+  "logoFile": "assets/examplemod/textures/logo.png",
+  "url": "minecraftforge.net/",
+  "updateJSON": "minecraftforge.net/versions.json",
+  "authorList": ["Author"],
+  "credits": "I'd like to personally thank Martin Luther King Jr. and Schindler's list for where we are today."
+}]
