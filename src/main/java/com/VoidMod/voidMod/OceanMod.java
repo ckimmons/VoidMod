@@ -1,15 +1,17 @@
 package com.VoidMod.voidMod;
-mport net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod;
+import org.apache.logging.log4j.Logger;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraft.init.Blocks;
+
 
 
 @Mod(modid = OceanMod.MODID, name = OceanMod.NAME, version = OceanMod.VERSION)
 public class OceanMod {
-	{
 	    public static final String MODID = "OceanMod";
 	    public static final String NAME = "Ocean mod: underwater aesthetics";
 	    public static final String VERSION = "0.0";
