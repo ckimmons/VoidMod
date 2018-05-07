@@ -1,4 +1,4 @@
-package OceanMod;
+package oceanmod;
 import net.minecraftforge.fml.common.Mod;
 import org.apache.logging.log4j.Logger;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -17,18 +17,27 @@ public class OceanMod {
 	    public static final String VERSION = "0.0";
 	    
 
-	    private static Logger logger;
-
+	    @SidedProxy(clientSide="oceanmod.ClientOnlyProxy", serverSide="oceanmod.DedicatedServerProxy")
+	    public static CommonProxy proxy;
+	    
+	    
 	    @EventHandler
 	    public void preInit(FMLPreInitializationEvent event)
 	    {
-	        logger = event.getModLog();
+	    	proxy.preInit();
 	    }
 
 	    @EventHandler
 	    public void init(FMLInitializationEvent event)
 	    {
-	        // some example code
-	        logger.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+	    	proxy.Init();
 	    }
+	    
+	    @EventHandler
+	    public void postInit(FMLInitializationEvent event)
+	    {
+	    	proxy.postInit();
+	    }
+	    
+	    public static String prependModID(String name) {return MODID + ":" + name;}
 }

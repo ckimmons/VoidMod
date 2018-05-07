@@ -1,4 +1,4 @@
-package OceanMod.drainBlock;
+package oceanmod.drainBlock;
 
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemBlock;

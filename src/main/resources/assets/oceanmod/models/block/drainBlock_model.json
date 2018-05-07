@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "down": "oceanmod:blocks/drainblock_frontface",
+        "up": "oceanmod:blocks/drainblock_frontface",
+        "north": "oceanmod:blocks/drainblock_frontface",
+        "east": "oceanmod:blocks/drainblock_frontface",
+        "south": "oceanmod:blocks/drainblock_frontface",
+        "west": "oceanmod:blocks/drainblock_frontface",
+        "particle": "blocks/cake_block"
+    }
+}

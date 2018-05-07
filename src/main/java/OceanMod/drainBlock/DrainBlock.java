@@ -1,4 +1,4 @@
-package OceanMod.drainBlock;
+package oceanmod.drainBlock;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -16,6 +16,10 @@ public class DrainBlock extends Block {
 		this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 	}
 	
-	
+    @SideOnly(Side.CLIENT)
+    public BlockRenderLayer getBlockLayer()
+	{
+    	return BlockRenderLayer.SOLID;
+	}
 	
 }
