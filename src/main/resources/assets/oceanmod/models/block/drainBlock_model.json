@@ -1,12 +1,12 @@
 {
     "parent": "block/cube",
     "textures": {
-        "down": "oceanmod:blocks/drainblock_frontface",
-        "up": "oceanmod:blocks/drainblock_frontface",
-        "north": "oceanmod:blocks/drainblock_frontface",
-        "east": "oceanmod:blocks/drainblock_frontface",
-        "south": "oceanmod:blocks/drainblock_frontface",
-        "west": "oceanmod:blocks/drainblock_frontface",
+        "down": "oceanmod:blocks/drain_bottom",
+        "up": "oceanmod:blocks/drain_top",
+        "north": "oceanmod:blocks/drain_side",
+        "east": "oceanmod:blocks/drain_side",
+        "south": "oceanmod:blocks/drain_side",
+        "west": "oceanmod:blocks/drain_side",
         "particle": "blocks/cake_block"
     }
 }
