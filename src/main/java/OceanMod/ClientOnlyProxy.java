@@ -1,4 +1,4 @@
-package com.VoidMod.voidMod;
+package OceanMod;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityPlayerSP;

@@ -1,4 +1,4 @@
-package com.VoidMod.voidMod;
+package OceanMod;
 import net.minecraftforge.fml.common.Mod;
 import org.apache.logging.log4j.Logger;
 import net.minecraftforge.fml.common.Mod.EventHandler;
