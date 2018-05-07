@@ -7,6 +7,6 @@
         "east": "oceanmod:blocks/drain_side",
         "south": "oceanmod:blocks/drain_side",
         "west": "oceanmod:blocks/drain_side",
-        "particle": "blocks/cake_block"
+        "particle": "oceanmod:blocks/drain_bottom"
     }
 }
