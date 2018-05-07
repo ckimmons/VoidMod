@@ -17,7 +17,14 @@ public class StartupCommon {
 	public static ItemBlock itemDrain;
 	
 	public static void preInitCommon(){
-		
+		drain = (DrainBlock)(new DrainBlock().setUnlocalizedName("drainBlock_unlocalised_name"));
+	    drain.setRegistryName("drainBlock_registry_name");
+	    ForgeRegistries.BLOCKS.register(drain);
+
+	    // We also need to create and register an ItemBlock for this block otherwise it won't appear in the inventory
+	    itemDrain = new ItemBlock(drain);
+	    itemDrain.setRegistryName(drain.getRegistryName());
+	    ForgeRegistries.ITEMS.register(itemDrain);
 	}
 	
 	public static void InitCommon(){
