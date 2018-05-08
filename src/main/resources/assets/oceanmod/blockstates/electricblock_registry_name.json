@@ -1,5 +1,5 @@
 {
     "variants": {
-        "normal": { "model": "oceanmod:electricBlock_model" }
+        "normal": { "model": "oceanmod:drainblock_model" }
     }
 }
