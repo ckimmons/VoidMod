@@ -1,5 +1,11 @@
 {
     "variants": {
-        "normal": { "model": "oceanmod:drainblock_model" }
+        "normal": { "model": "oceanmod:drainmodels/drainblock_model" },
+        "facing=up": {"model": "oceanmod:drainmodels/drainblock_model_up"},
+        "facing=down": {"model": "oceanmod:drainmodels/drainblock_model_down"},
+        "facing=east": {"model": "oceanmod:drainmodels/drainblock_model_east"},
+        "facing=west": {"model": "oceanmod:drainmodels/drainblock_model_west"},
+        "facing=north": {"model": "oceanmod:drainmodels/drainblock_model_north"},
+        "facing=south":{"model": "oceanmod:drainmodels/drainblock_model_south"}
     }
 }
