@@ -7,6 +7,10 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraft.init.Blocks;
+import net.minecraft.item.ItemStack;
+import net.minecraft.init.Items;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 
 
@@ -17,6 +21,7 @@ public class OceanMod {
 	    public static final String VERSION = "0.0";
 	    
 
+	    ResourceLocation optionalGroup = new ResourceLocation("");
 	    @SidedProxy(clientSide="oceanmod.ClientOnlyProxy", serverSide="oceanmod.DedicatedServerProxy")
 	    public static CommonProxy proxy;
 	    
@@ -38,6 +43,7 @@ public class OceanMod {
 	    {
 	    	proxy.postInit();
 	    }
+	    
 	    
 	    public static String prependModID(String name) {return MODID + ":" + name;}
 }

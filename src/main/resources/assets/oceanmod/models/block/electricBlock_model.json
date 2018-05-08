@@ -1,12 +1,12 @@
 {
     "parent": "block/cube",
     "textures": {
-        "down": "oceanmod:blocks/electricBlock_bottom",
-        "up": "oceanmod:blocks/electricBlock_top",
-        "north": "oceanmod:blocks/electricBlock_side",
-        "east": "oceanmod:blocks/electricBlock_side",
-        "south": "oceanmod:blocks/electricBlock_side",
-        "west": "oceanmod:blocks/electricBlock_side",
+        "down": "oceanmod:blocks/electricblock_bottom",
+        "up": "oceanmod:blocks/electricblock_top",
+        "north": "oceanmod:blocks/electricblock_side",
+        "east": "oceanmod:blocks/electricblock_side",
+        "south": "oceanmod:blocks/electricblock_side",
+        "west": "oceanmod:blocks/electricblock_side",
         "particle": "oceanmod:blocks/drain_bottom"
     }
 }
