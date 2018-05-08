@@ -36,9 +36,7 @@ public class ElectricBlock extends Block {
         
         int i = 5;
  
-        if(worldIn.isRemote){
-        	return;
-        }
+     
             for (BlockPos blockpos : BlockPos.getAllInBox(pos.add(-i, -i, -i), pos.add(i, i, i)))
             {
             		IBlockState iblockstate = worldIn.getBlockState(blockpos);

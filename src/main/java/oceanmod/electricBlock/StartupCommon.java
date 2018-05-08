@@ -16,7 +16,7 @@ public class StartupCommon {
 
 	public static ElectricBlock electricBlock;
 	public static ItemBlock itemElectricBlock;
-	
+
 	public static void preInitCommon(){
 		electricBlock = (ElectricBlock)(new ElectricBlock().setUnlocalizedName("electricblock_unlocalised_name"));
 		electricBlock.setRegistryName("electricblock_registry_name");
