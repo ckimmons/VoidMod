@@ -12,6 +12,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumBlockRenderType;
@@ -28,7 +29,7 @@ public class DrainBlock extends BlockDirectional {
 
 	//number of dfs iterations that it'll drain water (essentially radius of drained sphere)
 	//keep this low because this class isn't optimized
-	public static int drainPower = 5;
+	public static int drainPower = 10;
 	
 	public DrainBlock(){
 		super(Material.ROCK);
@@ -52,15 +53,19 @@ public class DrainBlock extends BlockDirectional {
         
         if (!worldIn.isRemote)
         {
-            if (worldIn.getBlockState(pos.offset(state.getValue(FACING))).getMaterial() == Material.WATER){
+            if (worldIn.getBlockState(pos.offset(state.getValue(FACING))).getMaterial() == Material.WATER &&
+                	(worldIn.getBlockState(pos.offset(state.getValue(FACING).getOpposite())).getMaterial() == Material.WATER ||
+                	worldIn.getBlockState(pos.offset(state.getValue(FACING).getOpposite())).getMaterial() == Material.AIR)){
             	drainWater(0,drainPower,state.getValue(FACING).getOpposite(),pos.offset(state.getValue(FACING)),worldIn);
+            	worldIn.setBlockState(pos.offset(state.getValue(FACING).getOpposite()), Blocks.WATER.getDefaultState());
             }
         }
     }
     
     protected void drainWater(int dist, int maxDist, EnumFacing fromDir, BlockPos pos, World worldIn){
-    	int d = dist++;
-    	worldIn.setBlockToAir(pos);
+    	int d = dist+1;
+    	System.out.println("Block: ("+pos.getX()+","+pos.getY()+","+pos.getZ()+") on iteration "+d);
+    	worldIn.setBlockToAir(pos); 
     	if (d < maxDist){
     		for (EnumFacing dir : EnumFacing.VALUES){
     			if (dir != fromDir){
